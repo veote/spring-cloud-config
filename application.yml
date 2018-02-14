@@ -19,4 +19,4 @@ spring: # <---NEW SECTION
       
 fortune-service:
   ribbon:
-    MaxAutoRetriesNextServer: 1
+      NFLoadBalancerRuleClassName: com.netflix.loadbalancer.WeightedResponseTimeRule
