@@ -17,6 +17,3 @@ spring: # <---NEW SECTION
     services:
       registrationMethod: direct
       
-fortune-service:
-  ribbon:
-      NFLoadBalancerRuleClassName: com.netflix.loadbalancer.WeightedResponseTimeRule
