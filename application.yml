@@ -15,3 +15,11 @@ spring: # <---NEW SECTION
   cloud:
     services:
       registrationMethod: route
+      
+fortune-service:
+  ribbon:
+    MaxAutoRetriesNextServer: 1
+    
+logging:
+  level:
+    org.springframework.retry: DEBUG
