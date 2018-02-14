@@ -10,6 +10,7 @@ logging:
   level:
     io:
       pivotal: DEBUG
+    org.springframework.retry: DEBUG
       
 spring: # <---NEW SECTION
   cloud:
@@ -19,7 +20,3 @@ spring: # <---NEW SECTION
 fortune-service:
   ribbon:
     MaxAutoRetriesNextServer: 1
-    
-logging:
-  level:
-    org.springframework.retry: DEBUG
